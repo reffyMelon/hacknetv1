@@ -29,3 +29,4 @@ def main():
 	print('|My GitHub:https://github.com/reffyMelon       |')
 	print('|The creation date of the script:22.04.2019    |')
 	print('|______________________________________________|')
+main()
