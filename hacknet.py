@@ -50,6 +50,7 @@ def ip(dn):
 		return ip
 	except:
         return "[Error]: ip not found!"
+ip()
 
 def getServerName ( siteName ):
     try:
@@ -89,7 +90,7 @@ if moduleNum == "1":
 
 
     comand()
-
+   getServerName()
 def comand (): 
 
     comand = input("[$] --> ")
@@ -108,3 +109,4 @@ def comand ():
 
 
 print(comand())
+comand()
