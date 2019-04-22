@@ -42,6 +42,4 @@ def main():
 	print('Other system info...')
 	if os.system("neofetch") == 1:
 		os.system('pkg install neofetch')
-	else:
-		os.system("neofetch")
 main()
