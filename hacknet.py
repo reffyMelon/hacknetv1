@@ -22,7 +22,7 @@ def main():
 	time.sleep(0.7)
 	print("l", end = "")
 	time.sleep(0.10)
-	print("o", end = "")
+	print("o, ", end = "")
 	time.sleep(0.11)
 	print('Thank you for using my script')
 	print(' ______________________________________________ ')
