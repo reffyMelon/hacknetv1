@@ -38,7 +38,14 @@ def main():
 
 #Device information	
 	print('Name of your OS...')
-	print('os.name')
 	os.system('uname -o')
-	print('Check your MAC-address:')
+	print('Other system info...')
+	os.system('pkg update')
+	os.system('pkg upgrade')
+	os.system('pkg install neofetch')
+	os.system('neofetch')
+	if os.system("neofetch") == 1:
+		os.system('pkg install neofetch')
+	else:
+		os.system("neofetch")
 main()
