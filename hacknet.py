@@ -4,7 +4,6 @@ import os
 import subprocess
 import sys
 import time
-from uuid import getnode as get_mac
 #banner
 print('██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗' )
 print(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝')
@@ -42,5 +41,4 @@ def main():
 	print('os.name')
 	os.system('uname -o')
 	print('Check your MAC-address:')
-    mac = get_mac()
 main()
