@@ -44,10 +44,3 @@ def main():
 	if os.system("neofetch") == 1:
 		os.system('pkg install neofetch')
 main()
-def ip(dn):
-	try:
-		ip = socket.gethostbyname(domainName)
-		return ip
-	except:
-        return "[Error]: ip not found!"
-ip()
