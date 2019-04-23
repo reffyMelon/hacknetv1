@@ -35,15 +35,6 @@ def main():
   +|Developed for Termux|+
  ==========================
     """)
-#Disclaimer
-print ("""
- ++++++++++++++++++++++
- +Disclaimer!         +
- ++++++++++++++++++++++
- #   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    #
-###  $The author is not responsible for the violations committed by the user$   ###
- #   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    #
-""")
 #Device information	
 	print('Name of your OS...')
 	os.system('uname -o')
