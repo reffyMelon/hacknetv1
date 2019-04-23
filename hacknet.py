@@ -35,11 +35,28 @@ def main():
   +|Developed for Termux|+
  ==========================
     """)
-
+#Disclaimer
+print ("""
+ ++++++++++++++++++++++
+ +Disclaimer!         +
+ ++++++++++++++++++++++
+ #   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    #
+###  $The author is not responsible for the violations committed by the user$   ###
+ #   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    #
+""")
 #Device information	
 	print('Name of your OS...')
 	os.system('uname -o')
 	print('Other system info...')
 	if os.system("neofetch") == 1:
 		os.system('pkg install neofetch')
+ print('Menu:')
+ print('$##########################$')
+ print('1)Gratitudes')
+ print('2)Nmap')
+ print('3)Metasploit')
+ print('Port scan')
+ print('Whois')
+ print('IP Lookup')
+ 
 main()
