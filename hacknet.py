@@ -27,21 +27,21 @@ def main():
 	print('|Script|')
 	
 	print("""
-        print(' ______________________________________________' )
-	print('|Author:Reffy|My VK:https://vk.com/mrgurutopyt |')
-	print('|My GitHub:https://github.com/reffyMelon       |')
-	print('|The creation date of the script:22.04.2019    |')
-	print(' ______________________________________________' )
+         ______________________________________________
+	|Author:Reffy|My VK:https://vk.com/mrgurutopyt |
+	|My GitHub:https://github.com/reffyMelon       |
+	|The creation date of the script:22.04.2019    |
+	 ______________________________________________ 
     ____________________
   +|Developed for Termux|+
  ==========================
     """)
 #Device information 
- print('Name of your OS...')
- os.system('uname -o')
- print('Other system info...')
- if os.system("neofetch") == 1:
-  os.system('pkg install neofetch')
+print('Name of your OS...')
+os.system('uname -o')
+print('Other system info...')
+if os.system("neofetch") == 1:
+ os.system('pkg install neofetch')
 print('Menu:')
 print('$##########################$')
 print('1)Gratitudes')
