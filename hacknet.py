@@ -25,28 +25,21 @@ def main():
 	print("|My|", end = "")
 	time.sleep(0.11)
 	print('|Script|')
-	print(' ______________________________________________ ')
+	
+	print("""
+        print(' ______________________________________________' )
 	print('|Author:Reffy|My VK:https://vk.com/mrgurutopyt |')
 	print('|My GitHub:https://github.com/reffyMelon       |')
 	print('|The creation date of the script:22.04.2019    |')
-	print('|______________________________________________|')
-	print("""
+	print(' ______________________________________________' )
     ____________________
   +|Developed for Termux|+
  ==========================
     """)
-#Device information	
-	print('Name of your OS...')
-	os.system('uname -o')
-	print('Other system info...')
-	if os.system("neofetch") == 1:
-		os.system('pkg install neofetch')
-print('Menu:')
-print('$##########################$')
-print('1)Gratitudes')
-print('2)Nmap')
-print('3)Metasploit')
-print('Port scan')
-print('Whois')
-print('IP Lookup')
+#Device information 
+ print('Name of your OS...')
+ os.system('uname -o')
+ print('Other system info...')
+ if os.system("neofetch") == 1:
+  os.system('pkg install neofetch')
 main()
