@@ -3,7 +3,6 @@ import socket
 import os
 import subprocess
 import sys
-import requests
 import time
 #banner
 print('██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗' )
