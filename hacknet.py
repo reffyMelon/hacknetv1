@@ -42,4 +42,13 @@ def main():
  print('Other system info...')
  if os.system("neofetch") == 1:
   os.system('pkg install neofetch')
+print('Menu:')
+print('$##########################$')
+print('1)Gratitudes')
+print('2)Nmap')
+print('3)Metasploit')
+print('Port scan')
+print('Whois')
+print('IP Lookup')
 main()
+
