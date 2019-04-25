@@ -4,10 +4,6 @@ import os
 import subprocess 
 import sys 
 import time
-from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
-from prettytable import PrettyTable
-from colorama import *
-import progressbar
 
 def banner():
 	print(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗' )
