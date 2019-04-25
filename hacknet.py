@@ -77,10 +77,7 @@ def join():
 			os.system("pkg install unstable-repo") 
 			os.system("pkg install metasploit") 
 
-		if hpt == "4":
-		print('Port-Scanner')
 		
-
 		if hpt == "7":
 			print("Bye!")
 			exit()
