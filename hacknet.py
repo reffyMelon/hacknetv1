@@ -36,10 +36,7 @@ def main():
 		print('1)Gratitudes')
 		print('2)Nmap')
 		print('3)Metasploit')
-		print('4)Port scan')
-		print('5)Whois')
-		print('6)IP Lookup')
-		print('7)Quit')
+		print('4)Quit!')
 		print('----------------------------')
 		join()
 def menu():
@@ -72,9 +69,7 @@ def join():
 			os.system("apt update && apt upgrade") 
 			os.system("pkg install unstable-repo") 
 			os.system("pkg install metasploit") 
-
-		
-		if hpt == "7":
+		if hpt == "4":
 			print("Bye!")
 			exit()
 
