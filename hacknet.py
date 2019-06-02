@@ -79,6 +79,7 @@ def join():
 		#hpt = input(temp)
 		#functionality:
 		if hpt == "1":
+			#port scaner developer:https://github.com/inkviz96?
 			print("Port scaner")
 			init(autoreset=True)
 			usersTarget = input("Input target's ip or url: ")
