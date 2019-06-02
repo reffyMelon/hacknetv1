@@ -57,7 +57,6 @@ def main():
 		os.system('uname -o') # Os command line
 		print(colored('Other system info...', "red"))
 		os.system("pkg install neofetch")
-		os.system("neofetch")
 		print(colored('Menu:', "green"))
 		print('$##########################$')
 		print(colored('1)Port scaner:', "green"))
