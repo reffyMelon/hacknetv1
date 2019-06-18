@@ -4,20 +4,8 @@ import os
 import subprocess 
 import sys 
 import time 
-try:
-	import colorama
-except:
-	print("Install colorama")
-	os.system("pip install colorama")
-
-try:
-	from termcolor import colored
-except:
-		print("Install termcolor")
-		os.system("pip install termcolor")
-
-os.system("clear")
-def banner():
+import colorama
+from termcolor import colored
 	print(colored(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗', "red"))
 	print(colored(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝', "red"))
 	print(colored(' ███████║███████║██║     █████╔╝█████╗██╔██╗ ██║█████╗     ██║', "red"))
@@ -32,13 +20,14 @@ def banner():
 #main-menu
 def main():
 		#Device information	
-		banner()
 		print('Name of your OS...')
 		print(sys.platform)
 		os.system('uname -o')
 		print(colored('Other system info...', "blue"))
 		if os.system("neofetch") == 1:
 			os.system('pkg install neofetch')
+		print(colored('Menu:', "blue"))
+		print('$##########################$')
 		print(colored('Menu:', "blue"))
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner:', "blue"))
@@ -48,12 +37,7 @@ def main():
 		print(colored('6)Exit', "blue"))
 		print(colored('$#############################$', "blue"))
 		join()
-def menu():
-	os.system("clear")
-	main()
-def join():
-	while True:
-		hpt = hpt = input("[$HPT]>", "blue")
+		hpt = input("[$HPT]>", "blue")
 		#if hpt == "1":
 
 		#if hpt == "2":
