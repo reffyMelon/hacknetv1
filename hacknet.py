@@ -32,7 +32,6 @@ def banner():
 	#print("User:", str(os.environ.get("USERNAME"), "loading conf.")
 #main-menu
 def main():
-		#Device information	
 		banner()
 		print(colored('Name of your OS...', "blue"))
 		os.system('uname -o')
