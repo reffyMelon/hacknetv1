@@ -1,10 +1,23 @@
 # -*- coding: utf-8 -*-
 #modules
-import os 
-import sys 
-import time 
-import colorama
-from termcolor import colored
+import os
+import subprocess
+import sys
+import time
+try:
+	import colorama
+except:
+	print("Install colorama")
+	os.system("pip install colorama")
+
+try:
+	from termcolor import colored
+except:
+		print("Install termcolor")
+		os.system("pip install termcolor")
+
+os.system("clear")
+def banner():
 	print(colored(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗', "red"))
 	print(colored(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝', "red"))
 	print(colored(' ███████║███████║██║     █████╔╝█████╗██╔██╗ ██║█████╗     ██║', "red"))
@@ -16,18 +29,17 @@ from termcolor import colored
 	print(colored('|		My GitHub:https://github.com/reffyMelon					  |', "red"))
 	print(colored('|		The creation date of the script:22.04.2019				  |', "red"))
 	print(colored(' ------------------------------------------------------------------', "red"))
+	#print("User:", str(os.environ.get("USERNAME"), "loading conf.")
 #main-menu
 def main():
 		#Device information	
 		banner()
-		print('Name of your OS...')
-		print(sys.platform)
+		print(colored('Name of your OS...', "blue"))
 		os.system('uname -o')
+		print(sys.platform)
 		print(colored('Other system info...', "blue"))
 		if os.system("neofetch") == 1:
 			os.system('pkg install neofetch')
-		print(colored('Menu:', "blue"))
-		print('$##########################$')
 		print(colored('Menu:', "blue"))
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner:', "blue"))
@@ -36,14 +48,40 @@ def main():
 		print(colored('5)Exploitation', "blue"))
 		print(colored('6)Exit', "blue"))
 		print(colored('$#############################$', "blue"))
-		hpt = input("[$HPT]>", "blue")
-		#if hpt == "1":
+		join()
+def menu():
+	os.system("clear")
+	main()
+def join():
+	while True:
+		#temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
+		#hpt = input(temp)
+		hpt = hpt = input("[$HPT]>", "blue")
 
-		#if hpt == "2":
-			
-		#if hpt == "3":
-		
+		if hpt == "1":
+				print("""
+													
+				############################################## =========
+				#Second developer:https://github.com/inkviz96# Writes port-scanner         
+				############################################## =========
+				""")
+
+
+		if hpt == "2":
+			print('install Nmap') #print
+			os.system("apt update && apt upgrade") #Update apt and System termux
+			os.system("pkg install nmap") #Install nmap
+			print("The installation is finished")
+
+
+		if hpt == "3":
+			print('install Metasploit')
+			os.system("apt update && apt upgrade") #Update apt and System termux
+			os.system("pkg install unstable-repo") #Install repositories
+			os.system("pkg install metasploit") #Install metasploit
+
+
 		if hpt == "7":
-			print("Bye!")
+			print("Goodbay")
 			exit()
-main()
+menu()
