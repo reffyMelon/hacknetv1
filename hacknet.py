@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 #modules
 import os 
-import subprocess 
 import sys 
 import time 
 import colorama
@@ -37,13 +36,7 @@ def main():
 		print(colored('5)Exploitation', "blue"))
 		print(colored('6)Exit', "blue"))
 		print(colored('$#############################$', "blue"))
-		join()
-def menu():
-	os.system("clear")
-	main()
-def join():
-	while True:
-		hpt = hpt = input("[$HPT]>", "blue")
+		hpt = input("[$HPT]>", "blue")
 		#if hpt == "1":
 
 		#if hpt == "2":
@@ -53,5 +46,4 @@ def join():
 		if hpt == "7":
 			print("Bye!")
 			exit()
-menu()
 main()
