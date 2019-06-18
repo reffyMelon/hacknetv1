@@ -6,7 +6,6 @@ import sys
 import time 
 import colorama
 from termcolor import colored
-def banner():
 	print(colored(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗', "red"))
 	print(colored(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝', "red"))
 	print(colored(' ███████║███████║██║     █████╔╝█████╗██╔██╗ ██║█████╗     ██║', "red"))
@@ -20,7 +19,7 @@ def banner():
 	print(colored(' ------------------------------------------------------------------', "red"))
 #main-menu
 def main():
-		#Device information
+		#Device information	
 		banner()
 		print('Name of your OS...')
 		print(sys.platform)
@@ -39,7 +38,12 @@ def main():
 		print(colored('6)Exit', "blue"))
 		print(colored('$#############################$', "blue"))
 		join()
-		hpt = input("[$HPT]>", "blue")
+def menu():
+	os.system("clear")
+	main()
+def join():
+	while True:
+		hpt = hpt = input("[$HPT]>", "blue")
 		#if hpt == "1":
 
 		#if hpt == "2":
@@ -50,3 +54,4 @@ def main():
 			print("Bye!")
 			exit()
 menu()
+main()
