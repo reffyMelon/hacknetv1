@@ -39,7 +39,8 @@ def main():
 		print(sys.platform)
 		print(colored('Other system info...', "blue"))
 		if os.system("neofetch") == 1:
-			os.system('pkg install neofetch')
+			os.system("pkg install neofetch")
+		else:os.system("neofetch")
 		print(colored('Menu:', "blue"))
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner:', "blue"))
