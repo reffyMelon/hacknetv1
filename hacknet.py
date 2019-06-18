@@ -43,10 +43,10 @@ def main():
 		print(colored('Menu:', "blue"))
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner:', "blue"))
-		print(colored('3)Whois', "blue"))
-		print(colored('4)Information gathering', "blue"))
-		print(colored('5)Exploitation', "blue"))
-		print(colored('6)Exit', "blue"))
+		print(colored('2)Whois', "blue"))
+		print(colored('3)Information gathering', "blue"))
+		print(colored('4)Exploitation', "blue"))
+		print(colored('5)Exit', "blue"))
 		print(colored('$#############################$', "blue"))
 		join()
 def menu():
@@ -58,12 +58,15 @@ def join():
 		#hpt = input(temp)
 		hpt = input(colored('[$HPT]>', "blue"))
 
-		if hpt == "1":
+		#if hpt == "1":
 
-		if hpt == "2":
+		#if hpt == "2":
 			
-		if hpt == "3":
-			
+		#if hpt == "3":
+		
+		#if hpt == "4":
+		
+		#if hpt == "5":
 		if hpt == "7":
 			print("Goodbye")
 			exit()
