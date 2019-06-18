@@ -66,8 +66,8 @@ def join():
 		
 		#if hpt == "4":
 		
-		#if hpt == "5":
-		if hpt == "7":
-			print("Goodbye")
+		#
+		if hpt == "5":
+			print('Goodbye!')
 			exit()
 menu()
