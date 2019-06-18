@@ -6,6 +6,7 @@ import sys
 import time 
 import colorama
 from termcolor import colored
+def banner():
 	print(colored(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗', "red"))
 	print(colored(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝', "red"))
 	print(colored(' ███████║███████║██║     █████╔╝█████╗██╔██╗ ██║█████╗     ██║', "red"))
@@ -19,7 +20,8 @@ from termcolor import colored
 	print(colored(' ------------------------------------------------------------------', "red"))
 #main-menu
 def main():
-		#Device information	
+		#Device information
+		banner()
 		print('Name of your OS...')
 		print(sys.platform)
 		os.system('uname -o')
