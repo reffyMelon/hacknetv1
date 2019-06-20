@@ -4,10 +4,10 @@ import socket
 from termcolor import colored
 def posrtscan():
 	def scaner():
-    print("#"*55)
+    print("###################################################################################")
     host = input(colored("Host --> ", "blue"))
     port = int(input(colored( "Port --> ", "blue")))
-    print("#"*55)
+    print("###################################################################################")
 
     scan = socket.socket()
     try:
@@ -39,12 +39,12 @@ def scaner2():
         else:
             print(color_c + "Port -- ", p, " -- [OPEN]")
 
-print("#"*55)
+print("###################################################################################")
 
 print(colored("[1] --- сканировать отделный порт", "blue"))
 print(colored("[2] --- сканировать список", "blue"))
 
-print("#"*55)
+print("###################################################################################")
 scann = input("[scan]--> ")
 
 if scann == "1":
