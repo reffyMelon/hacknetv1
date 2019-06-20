@@ -23,9 +23,9 @@ def banner():
 	print(colored(' ██║  ██║██║  ██║╚██████╗██║  ██╗     ██║ ╚████║███████╗   ██║', "red"))
 	print(colored(' ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═╝  ╚═══╝╚══════╝   ╚═╝', "red"))
 	print(colored(' __________________________________________________________________', "red"))
-	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt			  |', "red"))
-	print(colored('|		My GitHub:https://github.com/reffyMelon					  |', "red"))
-	print(colored('|		The creation date of the script:22.04.2019				  |', "red"))
+	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt	  |', "red"))
+	print(colored('|		My GitHub:https://github.com/reffyMelon		  |', "red"))
+	print(colored('|		The creation date of the script:22.04.2019	  |', "red"))
 	print(colored(' ------------------------------------------------------------------', "red"))
 	#print("User:", str(os.environ.get("USERNAME"), "loading conf.")
 #main-menu
@@ -33,7 +33,7 @@ def join():
 	while True:
 		#temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
 		#hpt = input(temp)
-		hpt = input("[$HPT]>", "blue")
+		hpt = input(colored("[$HPT]>", "blue"))
 
 		if hpt == "1":
 			portscanner()
