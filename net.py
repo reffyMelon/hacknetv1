@@ -14,7 +14,7 @@ try:
 except:
 		print("Install termcolor")
 		os.system("pip install termcolor")
-
+os.system("clear")
 def banner():
 	print(colored(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗', "red"))
 	print(colored(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝', "red"))
@@ -31,9 +31,9 @@ def banner():
 #main-menu
 def join():
 	while True:
-		temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
-		hpt = input(temp)
-		#hpt = input("[$HPT]>", "blue")
+		#temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
+		#hpt = input(temp)
+		hpt = input("[$HPT]>", "blue")
 
 		if hpt == "1":
 			portscanner()
