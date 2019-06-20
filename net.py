@@ -2,7 +2,7 @@
 #modules
 import os
 import sys
-from core.py import *
+from core import *
 try:
 	import colorama
 except:
@@ -15,7 +15,6 @@ except:
 		print("Install termcolor")
 		os.system("pip install termcolor")
 
-os.system("clear")
 def banner():
 	print(colored(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗', "red"))
 	print(colored(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝', "red"))
@@ -30,12 +29,24 @@ def banner():
 	print(colored(' ------------------------------------------------------------------', "red"))
 	#print("User:", str(os.environ.get("USERNAME"), "loading conf.")
 #main-menu
+def join():
+	while True:
+		temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
+		hpt = input(temp)
+		#hpt = input("[$HPT]>", "blue")
+
+		if hpt == "1":
+			portscanner()
+		# if hpt == "2":
+
+		# if hpt == "3":
+
+		if hpt == "7":
+			print("Goodbye!")
+			exit()
 def main():
 		#Device information	
 		banner()
-		print(colored('Name of your OS...', "blue"))
-		os.system('uname -o')
-		print(sys.platform)
 		print(colored('Menu:', "blue"))
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner', "blue"))
@@ -45,21 +56,5 @@ def main():
 		print(colored('$#############################$', "blue"))
 		join()
 def menu():
-	os.system("clear")
 	main()
-def join():
-	while True:
-		#temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
-		#hpt = input(temp)
-		hpt = input("[$HPT]>", "blue")
-
-		if hpt == "1":
-			portscanner()
-		#if hpt == "2":
-			
-		#if hpt == "3":
-			
-		if hpt == "7":
-			print("Goodbye!")
-			exit()
 menu()
