@@ -56,7 +56,6 @@ def CheckPorts(portsListValue=portsList, target="192.168.100.1"):
 	progressBarScan.finish()
 	
 	return portIsOpen, portIsClose
-	return portsList
 
 def portsTable(portIsOpenList, portIsCloseList):
 	tablePortsList = PrettyTable([Back.WHITE + Fore.BLACK + "Port", "Availability"])
