@@ -9,12 +9,12 @@ from prettytable import PrettyTable
 from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
 
 def portscanner():
-init(autoreset=True)
-usersTarget = input("Input target's ip or url: ")
-portsList = [int(x) for x in input("Input ports \"like 80 443 8080\"(or empty for full scan): ").split()]
-print(portsList)
-if portsList == []:
-	portsList = [1, 2, 3, 5, 7, 9, 11, 13, 15, 17, 18, 19, 20, 21, 22, 23, 
+	init(autoreset=True)
+	usersTarget = input("Input target's ip or url: ")
+	portsList = [int(x) for x in input("Input ports \"like 80 443 8080\"(or empty for full scan): ").split()]
+	print(portsList)
+	if portsList == []:
+		portsList = [1, 2, 3, 5, 7, 9, 11, 13, 15, 17, 18, 19, 20, 21, 22, 23, 
 			24, 25, 26, 27, 29, 53, 67, 68, 79, 80, 88, 106, 110, 111, 113, 119, 
 			123, 137, 138, 139, 143, 161, 192, 311, 312, 389, 427, 443, 445, 464, 
 			465, 500, 514, 414, 532, 548, 554, 587, 600, 623, 625, 626, 660, 687, 
