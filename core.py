@@ -65,5 +65,3 @@ def portsTable(portIsOpenList, portIsCloseList):
 
 portIsOpenList, portIsCloseList = CheckPorts(target = usersTarget)
 print(portsTable(portIsOpenList, portIsCloseList))
-
-def 
