@@ -69,3 +69,6 @@ def portscanner():
 
     portIsOpenList, portIsCloseList = CheckPorts(portsList, usersTarget)
     print(portsTable(portIsOpenList, portIsCloseList))
+def reset():
+	print(colored("Back to menu!", "red"))
+	os.popen("clear")
