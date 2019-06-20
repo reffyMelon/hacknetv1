@@ -40,9 +40,8 @@ def main():
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner', "blue"))
 		print(colored('3)Whois', "blue"))
-		print(colored('4)DNS Lookup', "blue"))
-		print(colored('5)Tools installation', "blue"))
-		print(colored('6)Exit', "blue"))
+		print(colored('4)Tools installation', "blue"))
+		print(colored('5)Exit', "blue"))
 		print(colored('$#############################$', "blue"))
 		join()
 def menu():
