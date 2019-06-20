@@ -8,7 +8,6 @@ from prettytable import PrettyTable
 from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
 
 def portscanner():
-init(autoreset=True)
 usersTarget = input("Input target's ip or url: ")
 portsList = [int(x) for x in input("Input ports \"like 80 443 8080\"(or empty for full scan): ").split()]
 print(portsList)
