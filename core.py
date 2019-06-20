@@ -9,7 +9,9 @@ from prettytable import PrettyTable
 from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
 
 def portscanner():
+
 	init(autoreset=True)
+
 	usersTarget = input("Input target's ip or url: ")
 	portsList = [int(x) for x in input("Input ports \"like 80 443 8080\"(or empty for full scan): ").split()]
 	print(portsList)
@@ -23,7 +25,7 @@ def portscanner():
 			4488, 4500, 5003, 5100, 5222, 5223, 5228, 5297, 5350, 5351, 5353, 6970, 
 			7070, 8000, 8005, 8008, 8043, 8080, 8089, 8096, 8170, 8171, 8175, 8443, 
 			8800, 8843, 9418, 11211, 50003]
-		
+
 def CheckPorts(portsListValue=portsList, target="192.168.100.1"):
 	targetIP = gethostbyname(target)
 	portIsOpen = []
