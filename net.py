@@ -63,6 +63,6 @@ def join():
 		if hpt == "6":
 			print(colored("Goodbye!", "red"))
 			exit()
-		if hpt == "0":
-			reset()
+		#if hpt == "0":
+			#reset()
 menu()
