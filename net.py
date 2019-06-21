@@ -53,7 +53,7 @@ def join():
 	while True:
 		#temp = colored("$", "blue") + colored(str(os.environ.get("USERNAME")), "red") + "||" + colored(str(os.getcwd()), "green") + colored(":-->", "yellow")
 		#hpt = input(temp)
-		hpt = input("[$HPT]>", "blue")
+		hpt = input(colored("[$HPT]>", "blue"))
 
 		if hpt == "1":
 			portscanner()
