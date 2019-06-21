@@ -59,10 +59,11 @@ def join():
 			portscanner()
 		if hpt == "2":
 			whois()
-			
 		#if hpt == "3":
-			
-		if hpt == "6":
+
+		#if hpt == "4":
+
+		if hpt == "5":
 			print(colored("Goodbye!", "red"))
 			exit()
 		if hpt == "0":
