@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 import os
 import pprint
+import socket
 import colorama
 import progressbar
 from colorama import *
 from ipwhois import IPWhois
 from termcolor import colored
 from prettytable import PrettyTable
-from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
-
 
 def CheckPorts(portsListValue, target="192.168.100.1"):
     targetIP = gethostbyname(target)
@@ -72,3 +71,6 @@ def portscanner():
     print(portsTable(portIsOpenList, portIsCloseList))
 def whois():
 	pprint(IPWhois(input(colored("Input target's ip or url: ", "blue"))).lookup_whois())
+def dig():
+    targetdomain = input(colored("Input target's domain:", "blue"))
+    print(socket.gethostbyname(targetdomain))
