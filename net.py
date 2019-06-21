@@ -24,7 +24,7 @@ def banner():
 	print(colored(' ██║  ██║██║  ██║╚██████╗██║  ██╗     ██║ ╚████║███████╗   ██║', "red"))
 	print(colored(' ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═╝  ╚═══╝╚══════╝   ╚═╝', "red"))
 	print(colored(' __________________________________________________________________', "red"))
-	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt	  |', "red"))
+	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt  	  |', "red"))
 	print(colored('|		My GitHub:https://github.com/reffyMelon		  |', "red"))
 	print(colored('|		The creation date of the script:22.04.2019	  |', "red"))
 	print(colored(' ------------------------------------------------------------------', "red"))
@@ -59,8 +59,8 @@ def join():
 			portscanner()
 		if hpt == "2":
 			whois()
-		#if hpt == "3":
-
+		if hpt == "3":
+			dig()
 		#if hpt == "4":
 
 		if hpt == "5":
