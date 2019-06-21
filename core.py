@@ -53,7 +53,7 @@ def portsTable(portIsOpenList, portIsCloseList):
 def portscanner():
     init(autoreset=True)
 
-    usersTarget = input("Input target's ip or url: ")
+    usersTarget = input(colored("Input target's ip or url: ","blue"))
     portsList = [int(x) for x in input(colored("Input ports \"like 80 443 8080\"(or empty for full scan): ", "blue")).split()]
     if not portsList:
         portsList = [1, 2, 3, 5, 7, 9, 11, 13, 15, 17, 18, 19, 20, 21, 22, 23,
