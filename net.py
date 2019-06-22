@@ -2,7 +2,7 @@
 #modules
 import os
 import sys
-import socket
+from socket import *
 import pprint
 from core import *
 from ipwhois import IPWhois
