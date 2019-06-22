@@ -2,7 +2,10 @@
 #modules
 import os
 import sys
+import socket
+import pprint
 from core import *
+from ipwhois import IPWhois
 try:
 	import colorama
 except:
@@ -24,7 +27,7 @@ def banner():
 	print(colored(' ██║  ██║██║  ██║╚██████╗██║  ██╗     ██║ ╚████║███████╗   ██║', "red"))
 	print(colored(' ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═╝  ╚═══╝╚══════╝   ╚═╝', "red"))
 	print(colored(' __________________________________________________________________', "red"))
-	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt  	  |', "red"))
+	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt	  |', "red"))
 	print(colored('|		My GitHub:https://github.com/reffyMelon		  |', "red"))
 	print(colored('|		The creation date of the script:22.04.2019	  |', "red"))
 	print(colored(' ------------------------------------------------------------------', "red"))
@@ -58,9 +61,10 @@ def join():
 		if hpt == "1":
 			portscanner()
 		if hpt == "2":
-			whois()
+			pprint(IPWhois(input(colored("Input target's ip or url: ", "blue"))).lookup_whois())
 		if hpt == "3":
-			dig()
+			targetdomain = input(colored("Input target's domain:", "blue"))
+			print(socket.gethostbyname(targetdomain))
 		#if hpt == "4":
 
 		if hpt == "5":
