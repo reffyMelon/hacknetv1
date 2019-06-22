@@ -2,10 +2,9 @@
 #modules
 import os
 import sys
-from socket import *
+import socket
 import pprint
 from core import *
-from ipwhois import IPWhois
 try:
 	import colorama
 except:
@@ -42,10 +41,9 @@ def main():
 		print(colored('Menu:', "blue"))
 		print(colored('$#############################$', "blue"))
 		print(colored('1)Ports-Scanner', "blue"))
-		print(colored('2)Whois', "blue"))
-		print(colored('3)DNS Lookup', "blue"))
-		print(colored('4)Tools installation', "blue"))
-		print(colored('5)Exit', "blue"))
+		print(colored('2)DNS Lookup', "blue"))
+		print(colored('3)Tools installation', "blue"))
+		print(colored('4)Exit', "blue"))
 		print(colored('0)Restart', "blue"))
 		print(colored('$#############################$', "blue"))
 		join()
@@ -61,13 +59,11 @@ def join():
 		if hpt == "1":
 			portscanner()
 		if hpt == "2":
-			pprint(IPWhois(input(colored("Input target's ip or url: ", "blue"))).lookup_whois())
-		if hpt == "3":
 			targetdomain = input(colored("Input target's domain:", "blue"))
 			print(socket.gethostbyname(targetdomain))
-		#if hpt == "4":
-
-		if hpt == "5":
+		#if hpt == "3":
+			
+		if hpt == "4":
 			print(colored("Goodbye!", "red"))
 			exit()
 		if hpt == "0":
