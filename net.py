@@ -3,7 +3,6 @@
 import os
 import sys
 from core import *
-from socket import gethostbyname
 try:
 	import colorama
 except:
@@ -25,9 +24,9 @@ def banner():
 	print(colored(' ██║  ██║██║  ██║╚██████╗██║  ██╗     ██║ ╚████║███████╗   ██║', "red"))
 	print(colored(' ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═╝  ╚═══╝╚══════╝   ╚═╝', "red"))
 	print(colored(' __________________________________________________________________', "red"))
-	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt	  |', "red"))
-	print(colored('|		My GitHub:https://github.com/reffyMelon		  |', "red"))
-	print(colored('|		The creation date of the script:22.04.2019	  |', "red"))
+	print(colored('|		Author:Reffy|My VK:https://vk.com/mrgurutopyt	   |', "red"))
+	print(colored('|		My GitHub:https://github.com/reffyMelon		   |', "red"))
+	print(colored('|		The creation date of the script:22.04.2019	   |', "red"))
 	print(colored(' ------------------------------------------------------------------', "red"))
 	#print("User:", str(os.environ.get("USERNAME"), "loading conf.")
 #main-menu
@@ -58,8 +57,7 @@ def join():
 		if hpt == "1":
 			portscanner()
 		if hpt == "2":
-			targetdomain = input(colored("Input target's domain:", "blue"))
-			print(socket.gethostbyname(targetdomain))
+			dig()
 		#if hpt == "3":
 			
 		if hpt == "4":
