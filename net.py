@@ -3,7 +3,7 @@
 import os
 import sys
 import socket
-import pprint
+
 from core import *
 try:
 	import colorama
