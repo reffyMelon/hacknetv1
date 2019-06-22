@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
+import socket
 import colorama
 import progressbar
 from colorama import *
 from termcolor import colored
 from prettytable import PrettyTable
-from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
+#from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
 
 
 def CheckPorts(portsListValue, target="192.168.100.1"):
