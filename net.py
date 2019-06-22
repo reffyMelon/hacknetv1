@@ -3,7 +3,7 @@
 import os
 import sys
 from core import *
-from socket import *
+from socket import gethostbyname
 try:
 	import colorama
 except:
