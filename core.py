@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
+import pprint
 import colorama
 import progressbar
 from colorama import *
 from termcolor import colored
 from prettytable import PrettyTable
 from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
-
 
 def CheckPorts(portsListValue, target="192.168.100.1"):
     targetIP = gethostbyname(target)
@@ -40,7 +40,7 @@ def CheckPorts(portsListValue, target="192.168.100.1"):
 
 
 def portsTable(portIsOpenList, portIsCloseList):
-    tablePortsList = PrettyTable([Back.BLACK + Fore.WHITE + "Port", "Availability"])
+    tablePortsList = PrettyTable(colored("Port", "Availability", "white"))
     for everyPorts in portIsOpenList:
         tablePortsList.add_row([Back.BLACK + Fore.GREEN + str(everyPorts), "Open"])
     for everyPorts in portIsCloseList:
@@ -52,7 +52,7 @@ def portsTable(portIsOpenList, portIsCloseList):
 def portscanner():
     init(autoreset=True)
 
-    usersTarget = input(colored("Input target's ip or url: ", "blue"))
+    usersTarget = input(colored("Input target's ip or url: ","blue"))
     portsList = [int(x) for x in input(colored("Input ports \"like 80 443 8080\"(or empty for full scan): ", "blue")).split()]
     if not portsList:
         portsList = [1, 2, 3, 5, 7, 9, 11, 13, 15, 17, 18, 19, 20, 21, 22, 23,
@@ -70,4 +70,4 @@ def portscanner():
     print(portsTable(portIsOpenList, portIsCloseList))
 def dig():
     targetdomain = input(colored("Input target's domain:", "blue"))
-    print(gethostbyname(targetdomain))
+    print(с gethostbyname(targetdomain))
