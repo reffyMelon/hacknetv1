@@ -68,3 +68,6 @@ def portscanner():
 
     portIsOpenList, portIsCloseList = CheckPorts(portsList, usersTarget)
     print(portsTable(portIsOpenList, portIsCloseList))
+def dig():
+    targetdomain = input(colored("Input target's domain:", "blue"))
+    print(socket.gethostbyname(targetdomain))
