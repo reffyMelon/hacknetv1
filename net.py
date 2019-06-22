@@ -2,9 +2,8 @@
 #modules
 import os
 import sys
-import socket
-
 from core import *
+from socket import *
 try:
 	import colorama
 except:
