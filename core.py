@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
-import pprint
-import socket
 import colorama
 import progressbar
 from colorama import *
-from ipwhois import IPWhois
 from termcolor import colored
 from prettytable import PrettyTable
+from socket import socket, gethostbyname, AF_INET, SOCK_STREAM
+
 
 def CheckPorts(portsListValue, target="192.168.100.1"):
     targetIP = gethostbyname(target)
@@ -33,7 +32,7 @@ def CheckPorts(portsListValue, target="192.168.100.1"):
                 contProgressBar += 1
             testSocket.close()
         except:
-            print(colored("ERROR SOCKET!", "red"))
+            print("ERROR SOCKET!")
 
     progressBarScan.finish()
 
@@ -41,11 +40,11 @@ def CheckPorts(portsListValue, target="192.168.100.1"):
 
 
 def portsTable(portIsOpenList, portIsCloseList):
-    tablePortsList = PrettyTable([Back.BLACK + Fore.WHITE + "Port", "Availability"])
+    tablePortsList = PrettyTable([Back.WHITE + Fore.BLACK + "Port", "Availability"])
     for everyPorts in portIsOpenList:
-        tablePortsList.add_row([Back.BLACK + Fore.GREEN + str(everyPorts), "Open"])
+        tablePortsList.add_row([Back.WHITE + Fore.GREEN + str(everyPorts), "Open"])
     for everyPorts in portIsCloseList:
-        tablePortsList.add_row([Back.BLACK + Fore.RED + str(everyPorts), "Close"])
+        tablePortsList.add_row([Back.WHITE + Fore.RED + str(everyPorts), "Close"])
     tablePortsList.reversesort = False
 
     return tablePortsList
@@ -53,8 +52,8 @@ def portsTable(portIsOpenList, portIsCloseList):
 def portscanner():
     init(autoreset=True)
 
-    usersTarget = input(colored("Input target's ip or url: ","blue"))
-    portsList = [int(x) for x in input(colored("Input ports \"like 80 443 8080\"(or empty for full scan): ", "blue")).split()]
+    usersTarget = input("Input target's ip or url: ")
+    portsList = [int(x) for x in input("Input ports \"like 80 443 8080\"(or empty for full scan): ").split()]
     if not portsList:
         portsList = [1, 2, 3, 5, 7, 9, 11, 13, 15, 17, 18, 19, 20, 21, 22, 23,
                      24, 25, 26, 27, 29, 53, 67, 68, 79, 80, 88, 106, 110, 111, 113, 119,
@@ -69,8 +68,3 @@ def portscanner():
 
     portIsOpenList, portIsCloseList = CheckPorts(portsList, usersTarget)
     print(portsTable(portIsOpenList, portIsCloseList))
-def whois():
-	pprint(IPWhois(input(colored("Input target's ip or url: ", "blue"))).lookup_whois())
-def dig():
-    targetdomain = input(colored("Input target's domain:", "blue"))
-    print(socket.gethostbyname(targetdomain))
