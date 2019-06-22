@@ -70,4 +70,5 @@ def portscanner():
     print(portsTable(portIsOpenList, portIsCloseList))
 def dig():
     targetdomain = input(colored("Input target's domain:", "blue"))
-    print(с gethostbyname(targetdomain))
+    print(colored("Target's IP:", "green"))
+    print(gethostbyname(targetdomain))
